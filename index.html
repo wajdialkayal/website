@@ -26,6 +26,8 @@
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
+#canvas-wrap { position:relative;}
+#canvas-wrap canvas { position:absolute; }
 	/*basic reset*/
 * {margin: 0; padding: 0;}
 /*basic reset*/
@@ -36,32 +38,42 @@ canvas {display: block;}
 </style>
 </head>
 <body>
-<canvas id="c">
-	<div class="container text-center mt-100 mb-5 ">
-	<div class="row">
-		<div class="col-md-12">		
-			<p class="h2 text-light shad">Wajdi Alkayal</p>
-			<p class="h2 text-light shad">Web Design & App Development</p>
-			<p class="h2 text-light shad">Wajdi Alkayal</p>
-			<p class="h2 text-light shad"><i class="fa fa-phone rotate"></i> +375 33 351 5145</p>
-			<p class="h2 text-light">
-			<a href="mailto:wajdialkayal@gmail.com" class="btn btn-success shadow"><i class="fa fa-envelope rotate"></i> wajdialkayal@gmail.com</a></p>
-</div>
-	</div>
-<div class="row">
-	<div class="col-md-3"></div>
-	<div class="col-md-3"><a href="https://www.facebook.com/profile.php?id=100040361660197" class="btn btn-primary mt-5 shadow w-100" target="_blank"><i class="fa fa-facebook rotate"></i> Go to Facebook</a></div>
-	<div class="col-md-3"><a href="https://www.instagram.com/wajdielkayal/" class="btn btn-danger mt-5 shadow w-100" target="_blank"><i class="fa fa-instagram rotate"></i> Go to Instagram</a>
-			<div class="col-md-3"></div>
+    <div id="canvas-wrap">
 
-</div>
-</div>
+<canvas id="c"></canvas>
 
-</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-	
-	</canvas>
-
+	<div class="container text-center" id="overlay">
+        <div class="row">
+            <div class="col-md-12">		
+                <p class="h2 text-light shad">Wajdi Alkayal</p>
+                <p class="h2 text-light shad">Web Design & App Development</p>
+                <p class="h2 text-light shad">Wajdi Alkayal</p>
+                <p class="h2 text-light shad"><i class="fa fa-phone rotate"></i> +375 33 351 5145</p>
+                <p class="h2 text-light">
+                <a href="mailto:wajdialkayal@gmail.com" class="btn btn-success shadow"><i class="fa fa-envelope rotate"></i> wajdialkayal@gmail.com</a></p>
+    </div>
+        </div>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-3"><a href="https://www.facebook.com/profile.php?id=100040361660197" class="btn btn-primary mt-5 shadow w-100" target="_blank"><i class="fa fa-facebook rotate"></i> Go to Facebook</a></div>
+        <div class="col-md-3"><a href="https://www.instagram.com/wajdielkayal/" class="btn btn-danger mt-5 shadow w-100" target="_blank"><i class="fa fa-instagram rotate"></i> Go to Instagram</a>
+                <div class="col-md-3"></div>
+    
+    </div>
+    </div>
+    
+    </div>
+    </div>
 </body>
 </html>
 <script>
